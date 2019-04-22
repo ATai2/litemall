@@ -1,68 +1,33 @@
 package org.linlinjava.litemall.db.util;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class OrderHandleOption {
-    private boolean cancel = false;      // 取消操作
-    private boolean delete = false;      // 删除操作
-    private boolean pay = false;         // 支付操作
-    private boolean comment = false;    // 评论操作
-    private boolean confirm = false;    // 确认收货操作
-    private boolean refund = false;     // 取消订单并退款操作
-    private boolean rebuy = false;        // 再次购买
+    private boolean cancel = false;
 
-    public boolean isCancel() {
-        return cancel;
-    }
+    // 取消操作
 
-    public void setCancel(boolean cancel) {
-        this.cancel = cancel;
-    }
+    private boolean delete = false;
 
-    public boolean isDelete() {
-        return delete;
-    }
+    // 删除操作
+    private boolean pay = false;
 
-    public void setDelete(boolean delete) {
-        this.delete = delete;
-    }
+    // 支付操作
 
-    public boolean isPay() {
-        return pay;
-    }
+    private boolean comment = false;
 
-    public void setPay(boolean pay) {
-        this.pay = pay;
-    }
+    // 评论操作
+    private boolean confirm = false;
 
-    public boolean isComment() {
-        return comment;
-    }
+    // 确认收货操作
+    private boolean refund = false;
 
-    public void setComment(boolean comment) {
-        this.comment = comment;
-    }
+    // 取消订单并退款操作
 
-    public boolean isConfirm() {
-        return confirm;
-    }
+    private boolean rebuy = false;
 
-    public void setConfirm(boolean confirm) {
-        this.confirm = confirm;
-    }
-
-    public boolean isRefund() {
-        return refund;
-    }
-
-    public void setRefund(boolean refund) {
-        this.refund = refund;
-    }
-
-    public boolean isRebuy() {
-        return rebuy;
-    }
-
-    public void setRebuy(boolean rebuy) {
-        this.rebuy = rebuy;
-    }
-
+    // 再次购买
 }
